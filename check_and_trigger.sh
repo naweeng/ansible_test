@@ -1,4 +1,6 @@
+#!/bin/bash
 
+set -x
 GIT_REVISION=`git rev-parse HEAD`
 
 git diff-tree --name-only HEAD | grep test1
